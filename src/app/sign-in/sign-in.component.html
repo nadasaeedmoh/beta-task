@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="container" id="body">
+    <div class="row justify-content-md-center">
+        <div class="col col-6" id="car">
+            <app-carousel-view></app-carousel-view>
+        </div>  
+        <div class="col col-6 " id="content">
+          <div class="card" id="signUp-card">
+            <div class="card-body" >
+              <h1 class="card-title" id="app-name">BetaHubs</h1>
+              <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                  <input type="email" class="form-control  form-control-sm" formControlName="email" 
+                   placeholder="Enter E-mail">
+                  <div *ngIf="signInForm.controls && signInForm.controls.email.touched &&  signInForm.controls.email.invalid" 
+                  class="alert alert-danger">
+                      Enter a correct Email
+                    </div>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control  form-control-sm" id="pass" 
+                  formControlName="pass" placeholder="Password">
+                </div>
+                <button (click)="signIn()" type="submit" class="btn btn-success" 
+                [disabled]="!signInForm.valid" id="subUp">Log in</button>
+                <p class="card-text" id="forget">
+                  <a href="/#/ResetPassword" class="card-link">Forgot password?
+                  </a>
+                </p>
+              </form>
+           </div>
+          </div>
+          <div class="card" id="toLogIn-card">
+            <div class="card-body">
+              <p class="card-text" id="acc">Don't have an account? 
+                <a [routerLink]="['/SignUp']" class="card-link">Sign up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+

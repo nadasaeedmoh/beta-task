@@ -1,0 +1,52 @@
+#body{
+    width: 80%;
+    align-content: center;
+    margin-top: 5%;
+}
+#signUp-card, #toLogIn-card{
+    width: 100%;
+    padding: 0 30px;
+}
+
+#app-name{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+}
+
+#subUp{
+    width: 100%;
+    background-color: #11a64f
+}
+
+.ng-valid[required], .ng-valid.required {
+    outline: none !important;
+    border: #11a64f;
+    box-shadow: 0 0 10px #11a64f ;
+} 
+
+
+
+#toLogIn-card{
+    margin-top: 1%;
+}
+
+#forget{
+    margin-top:3%;
+    text-align: center;
+    font-size: 12px;
+}
+
+#acc{
+    text-align: center;
+}
+
+.ng-invalid:not(form)  {
+    outline: none !important;
+    border: #DC143C;
+    box-shadow: 0 0 10px #DC143C ;
+}
+
+.alert{
+    padding: 0 !important;
+}

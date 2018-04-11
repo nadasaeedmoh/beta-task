@@ -1,0 +1,101 @@
+#body{
+    width: 80%;
+    align-content: center;
+    margin-top: 5%;
+}
+#signUp-card, #toLogIn-card{
+    width: 100%;
+    padding:0 30px;
+}
+
+#app-name{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+}
+
+#card-subtitle{
+    font-size: 15px;
+}
+
+#card-subtitle, #paragraph-subtitle{
+    text-align: center; 
+    color: #999; 
+}
+
+#social{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Fb, #google{
+    margin-right: 5%;
+    
+}
+
+#google{
+    background-color:  #d34836;
+}
+
+#Fb{
+    background-color:#3b5999;
+}
+
+
+
+.fab{
+    font-size: 25px;
+}
+
+#Fb, #google{
+    border-radius: 5%;
+    border:none;
+}
+
+.fa-facebook-f{
+    color: white;
+}
+
+#or{
+    text-align: center;
+    position: relative;
+    top: 15px;
+    color: #999;
+}
+
+#subUp{
+    width: 100%;
+    background-color: #11a64f
+}
+
+.ng-valid[required], .ng-valid.required {
+    outline: none !important;
+    border: #11a64f;
+    box-shadow: 0 0 10px #11a64f ;
+}
+
+#paragraph-subtitle{
+    margin-top: 3%;
+    font-size: 13px;
+}
+
+#toLogIn-card{
+    margin-top: 1%;
+}
+
+#acc{
+    text-align: center;
+}
+.ng-invalid:not(form)  {
+    outline: none !important;
+    border: #DC143C;
+    box-shadow: 0 0 10px #DC143C ;
+}
+
+.alert{
+    padding: 0 !important;
+    color: black;
+}
+

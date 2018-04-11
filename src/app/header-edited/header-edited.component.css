@@ -1,0 +1,14 @@
+button{
+    background-color: #11a64f;
+    color: white;
+    position: relative;
+    width: 50%;
+}
+
+#SignIn{
+    right: 20%;
+}
+
+#SignUp{
+    right: 15%;
+}

@@ -1,0 +1,23 @@
+<nav class="navbar  navbar-light " style="background-color:white;">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/image/logo.png" width="80" height="50" alt="">
+  </a>
+  <form class="form-inline">
+    <div id="container">
+        <i id="cart" class="fas fa-shopping-cart"></i> 
+        <div class="cartBtn form-control " >
+            <div ngbDropdown class="content">
+                <button class="btn " id="items" ngbDropdownToggle>{{data.itemsCount}}</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownConfig" id="drop">
+                  <button class="dropdown-item" *ngFor="let item of data.itemsName" [id]="item">{{item}}
+                    <button class="btn btn-danger" (click)="onDelete(item)">delete</button>
+                  </button>
+                </div>
+              </div>
+        </div>
+        <button type="button" class="btn btn-primary" id="order" (click) = "onOrder()">Order</button>
+        
+        
+    </div>
+  </form>
+</nav>

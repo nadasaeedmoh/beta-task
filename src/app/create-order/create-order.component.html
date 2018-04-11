@@ -1,0 +1,20 @@
+<app-order-header  ></app-order-header>
+<div class="container">
+    <div class="row justify-content-center align-self-center">
+        <div class="card col-3 hcard" *ngFor="let Img of images" [id]="Img.id" >
+            <img class="card-img-top imgCard" [src]="Img.Url" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{Img.name}}</h5>
+                <button  (click)="onItemSelected(Img)" class="btn  cart" >
+                    <i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+        </div>
+        
+       
+    </div>
+</div>
+<br>
+
+
+
+

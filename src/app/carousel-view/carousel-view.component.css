@@ -1,0 +1,18 @@
+.slide-1{
+    margin-bottom: 10px;
+
+}
+
+.boxleft{
+    margin-left: 0px !important;
+    padding-left: 0px;
+}
+
+.boxRight{
+    margin-right: 0px !important;
+    padding-right: 0px !important;  
+}
+
+#car-body{
+    width: 100%;
+}
