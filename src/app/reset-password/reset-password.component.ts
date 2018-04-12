@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ResetPasswordComponent implements OnInit {
  emailValue;
  jsonData;
+ 
   constructor() { }
 
   ngOnInit() {
@@ -19,4 +20,5 @@ this.emailValue = event;
 this.jsonData = JSON.stringify(this.emailValue);
 
 }
+
 }
